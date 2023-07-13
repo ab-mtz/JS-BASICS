@@ -3,7 +3,7 @@
 const names = ['luis', 'pedro', 'pepe', 'jorge']
 
 for (let name of names) {
-    console.log(sub)
+    console.log(name)
 }
 
 // It works kind of python syntaxis (For book in books)
@@ -14,6 +14,7 @@ const names = [
     ['luis', 'pedro', 'pepe', 'jorge']
     ['luis', 'pedro', 'pepe', 'jorge']
     ['luis', 'pedro', 'pepe', 'jorge']
+]
 
 for (let row of names) {
     for (let name of row) {

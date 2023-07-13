@@ -6,6 +6,7 @@ let list = ['tomate', 'onion' , 'apples', 'fish'];
 let instruction = prompt("What do you like to do?");
 
 while (instruction !== 'quit') {
+    
 
     // Check for a valid instruction
         //if list
@@ -33,7 +34,7 @@ while (instruction !== 'quit') {
         console.log(list[indexItem] + " deleted from list");
         list.splice(indexItem, 1);
     }
-    
+
     else if (instruction === 'quit'){
         break;
     }    
