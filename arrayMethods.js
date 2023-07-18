@@ -25,3 +25,6 @@ texts; //['rofl', 'lol', 'omg', 'ttyl'];
 caps; // ['ROFL', BALBLABLALBA]
 // We could use .map to create a copy of a list of dictionaries and take only some position value 
 
+const title = movies.map(function (movie)  {
+    return movie.title.toUpperCase();
+})
