@@ -100,6 +100,36 @@ function makeBetweenFunc(min, max) {
     }
 
 
+//ARROW Functions 
+    // Syntactically compact alternative to a regular function expression
+
+const square = (x) => {  //If is only one argument we can omit parenthesis
+    return x * x;
+}
+
+//
+
+const rollDie = () => { // If the functions takes no arguments than we have to put parenthesis
+    return Math.random;
+}
+
+// With arrow functions we can use Implicit Returns: Only work where theres only one value fucnt
+
+const square = x => (
+    x * x
+);
+// OR
+const square = x => x * x;
+
+    // example
+
+    const newMovies = movies.map(function (movie) {
+        return `${movie.title} - ${movie.score / 10}`
+    })
+
+    //or
+
+    const newMovies = movies.map(movie => (`${movie.title} - ${movie.score / 10}`))
 
 
 
