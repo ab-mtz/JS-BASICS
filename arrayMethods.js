@@ -41,3 +41,22 @@ numbers.filter(n => n > 8)
 //When in an object we can conmbine arrow functions and array methods to filter some results and copy them to a new array
 movies.filter(m => m.score >80).map(m => m.title);
 
+// EVERY: test whether all elements in the array pass the provided function. It returns a Boolean value. 
+
+const exams =  [80, 98 ,92,  78, 77, 90]
+
+exams.every(score => score >= 75) // if one of the values in the array doesn't meet the condition, return false.
+
+//SOME: Returns true if ANY of the array elements pass the test function
+
+const exams =  [80, 98 ,92,  78, 77, 90]
+
+exams.some(score => score <= 75) // if one of the values in the array meet the condition, return true.
+
+// REDUCE: Executes a reducer function on each element of the array resulting in an single value. 
+    // summing an array
+    [3,5,7,9,11].reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+    });
+
+    
