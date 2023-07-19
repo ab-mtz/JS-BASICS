@@ -131,6 +131,52 @@ const square = x => x * x;
 
     const newMovies = movies.map(movie => (`${movie.title} - ${movie.score / 10}`))
 
+//Default Params
+    // gives the posibility to set default parameters in a function so in case a param is not specified (for example by user)
+    // It will execute with a default one.
+    function rollDie(numSides = 6) {
+        return Math.floor(Math.random() * numSides) +1
+    }
+
+    function greet(msg, person) {
+        console.log(`${msg}, ${person}`)
+    }
+    function greet(person, msg="Hello") {   //Params should be passed as second argument an ahead, not as a first one
+        console.log(`${msg}, ${person}`)
+    }
+
+// SPREAD
+    //If we have an array like this
+    const nums = [1,4,2,5,7,5,4,8,9,1233]
+    //And we want to run a method like
+    Math.max(nums) //we´ll have an error because the method expects 1 argument (or separete) an the arary is not that
+    //Then, using the spread method (...)
+    Math.max(...nums) //Will execute the method spreading the array in separate arguments
+    //It can spread a string in to each character
+
+    // Other use is to create a copy of an array (and not the direction in memory) and combine arrays
+    const cats = ['salsa', 'panela', 'shoshana']
+    const dogs = ['samao', 'kali', 'oso', 'sleeping']
+
+    const allPets = [...cats]   //
+
+    const allPets = [...cats, ...dogs]
+
+    //Spread with objects literals  to copy propertie objects into new objects
+
+    {...object1, ...object2}  //Combines objects properties into a new object with all the properties
+    //When both objects have properties with the same name(conflict), the second one will have preference
+    {...object1, ...object2, property: value} //We can add new properties manually
+    
+    {...[2, 4, 6, 8]} // This will give us {0:2, 1:4, 2:6, 3: 8}
+     
+// Rest parameters: The rest parameter syntax allows a function to accept an indefinite number of arguments as an array
+    function raceResults(gold, silver, ...everyoneElse) {
+        console.log(`Gold medal goes to: ${gold}`)
+        console.log(`Silver medal goes to: ${silver}`)
+        console.log(`And thaks to everyone else: ${everyoneElse}`)
+    }
 
 
 
+    
