@@ -178,5 +178,23 @@ const square = x => x * x;
     }
 
 
+// Destructuring from array
 
-    
+const scores = [23, 54, 75, 45,87,23]
+
+const highScore = scores[0];
+const secondHighScore = scores[1]; 
+//instead
+const[gold, silver, bronze, ...everyoneElse] = scores; //
+
+// Destructuring from objects 
+    //Supossing we habe an object called user with different properties
+    const { email } = user; //here we make a variable called email (must be a property inside the object)
+    const { email, username, name, lastName} = user; //We would be creating all this variables from the object.
+
+    const { name: firstName} = user; //With ": firstName" we can rename the property to a better variable management
+
+    // Destructuring params
+    function fullName({ firstName, lastName }) {
+        return `${firstName} ${lastName}`
+    }
