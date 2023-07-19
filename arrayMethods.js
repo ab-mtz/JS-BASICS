@@ -28,3 +28,16 @@ caps; // ['ROFL', BALBLABLALBA]
 const title = movies.map(function (movie)  {
     return movie.title.toUpperCase();
 })
+
+// Filter
+
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+numbers.filter(n => {
+    return n < 8  
+})
+//with implicit return
+numbers.filter(n => n > 8)
+
+//When in an object we can conmbine arrow functions and array methods to filter some results and copy them to a new array
+movies.filter(m => m.score >80).map(m => m.title);
+
