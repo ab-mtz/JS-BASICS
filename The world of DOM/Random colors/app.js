@@ -14,5 +14,5 @@ btnClick.addEventListener ( 'click' , () => {
 })
 
 const randomNumber = ()=> {
-    return Math.floor(Math.random()*255)+1;
+    return Math.floor(Math.random()*255);
 }

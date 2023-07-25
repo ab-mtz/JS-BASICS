@@ -16,3 +16,7 @@ button {
     border:none;
     border-radius: 5px;
 }
+
+button:hover {
+    box-shadow: 6px 6px 2px 1px whitesmoke ;
+}
