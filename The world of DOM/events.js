@@ -23,4 +23,4 @@ btn2.addEventListener('click', () => {
 }) //Allows to call two different functions simultaneusly
 // The go to 
 
-
+ 
