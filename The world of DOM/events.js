@@ -104,4 +104,20 @@ input.addEventListener('input', function (event) {
     console.log("Change of value of input field")
 }) //After every new type
 
+//EVENT BUBBLING
+// Event nested can bubble up and trigger other events
+button.addEventListener('click', function (event) {
+    event.stopPropagation(); //With this we stop the bubbling effect
+})
 
+// EVENT DELEGATION
+// Some action made for an existing html element can stop applying to new elements
+// We can apply the paren of elements
+
+const ul = document.querySelector('ul')
+ul.addEventListener('click', function (e) {
+    console.log("Click on ul");
+    console.log(e.target);  //We we'll se the property targe wich li was clicked
+    e.target.remove(); 
+    //e.target.nodeName === 'LI' && e.target.remove();
+})
