@@ -90,3 +90,18 @@ form.addEventListener("submit", function (event) {
     list.append(newLi);
 
 })
+
+//CHANGE EVENT
+
+const input = document.querySelector('input');
+
+input.addEventListener('change', function (event) {
+    console.log("Change of value of input field")
+}) //Will triggers when we leave the input field with a new value in it
+
+//INPUT EVENT
+input.addEventListener('input', function (event) {
+    console.log("Change of value of input field")
+}) //After every new type
+
+
