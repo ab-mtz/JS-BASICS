@@ -23,4 +23,25 @@ btn2.addEventListener('click', () => {
 }) //Allows to call two different functions simultaneusly
 // The go to 
 
- 
+//EVENT OBJECT
+
+document.querySelector('button').addEventListener('click', function (evt) {
+    alert("Click")
+    console.log(evt) // the event passes like an object and has properties
+})
+
+const input = document.querySelector('input');
+input.addEventListener('keydown', function (event) {
+    console.log(event.key)  //Will print property: 
+    console.log(event.code) // Will print property: KEYDOWN
+})
+// input.addEventListener('keyup', function () {
+//     console.log("keyup")
+// })
+
+//For exemple to a game where you need the event listener not for an input
+
+window.addEventListener('keydown', function (event) {
+    console.log(event.key)
+    console.log('Move down')
+})
