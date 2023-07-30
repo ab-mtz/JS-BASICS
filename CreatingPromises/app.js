@@ -7,7 +7,7 @@ const fakeRequest = (url) => {
             }
             reject('Request Error!');
         }, 1000)
-    })
+    }) 
 }
 
 fakeRequest('/dogs/1')
