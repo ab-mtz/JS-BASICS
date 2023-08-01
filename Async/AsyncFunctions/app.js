@@ -34,7 +34,8 @@ login('todd', 'corgifeetarecute')
         console.log("ERROR!")
         console.log(err)
     })
-
+// Return tells a successful response, and when running the function .then will proceed with it
+//And throw tells an unsuccessful response, will proceed trhough .catch
 
 
 
