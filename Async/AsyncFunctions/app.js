@@ -58,6 +58,9 @@ const delayedColorChange = (color, delay) => {
 //     .then(() => delayedColorChange('indigo', 1000))
 //     .then(() => delayedColorChange('violet', 1000))
 
+//AWAIT: 
+//Will pause the execution of the function, waitint for a promise to be resolved
+//We can only use it inside of functions declared with async. 
 
 async function rainbow() {
     await delayedColorChange('red', 1000)
